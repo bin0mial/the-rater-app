@@ -1,7 +1,5 @@
 import { LoginComponent } from 'features/users';
 
-function LoginPage() {
-  return <LoginComponent />;
-}
+const LoginPage = () => <LoginComponent />;
 
 export { LoginPage };

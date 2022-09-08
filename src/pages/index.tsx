@@ -1,7 +1,5 @@
 import { LoginPage } from 'pages/loginPage';
 
-function Pages() {
-  return <LoginPage />;
-}
+const Pages = () => <LoginPage />;
 
 export default Pages;

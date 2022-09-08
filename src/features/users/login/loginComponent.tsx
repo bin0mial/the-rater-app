@@ -1,5 +1,3 @@
-function LoginComponent() {
-  return <div>Login Component</div>;
-}
+const LoginComponent = () => <div>Login Component</div>;
 
 export { LoginComponent };
