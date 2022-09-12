@@ -7,6 +7,12 @@
       ],
       "pages/*": [
         "pages/*"
+      ],
+      "routers/*": [
+        "routers/*"
+      ],
+      "interfaces/*": [
+        "interfaces/*"
       ]
     },
     "target": "es5",
