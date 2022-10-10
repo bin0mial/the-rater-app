@@ -1,26 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Pages } from 'pages';
+import { Link } from 'react-router-dom';
+import { Suspense } from 'react';
+import routes from 'routers/routes';
+import { getRoutePath } from './utils/routes';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <Suspense fallback="Loading ...">
+    <Link to={routes.homePage}>Home Page</Link>
+    <Link to={getRoutePath(routes.users, 'login')}>Login</Link>
+    <Pages />
+  </Suspense>
+);
 
 export default App;
